@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "62e109b5-4772-46bd-a288-7a6bd32c1147",
+		"name": "Aws-Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lambda",
+			"item": [
+				{
+					"name": "liga recursos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"function\": \"wakeup\",\r\n    \"resources\": [\r\n        \"rds\",\r\n        \"ecs\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/lambda/desligaligarecursos"
+					},
+					"response": []
+				},
+				{
+					"name": "listFunctions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/lambda/listFunctions"
+					},
+					"response": []
+				},
+				{
+					"name": "getFunction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/lambda/getFunction"
+					},
+					"response": []
+				},
+				{
+					"name": "desliga recursos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"function\": \"sleep\",\r\n    \"resources\": [\r\n        \"rds\",\r\n        \"ecs\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/lambda/desligaligarecursos"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ECS",
+			"item": [
+				{
+					"name": "lista cLuster",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecs/listClusters"
+					},
+					"response": []
+				},
+				{
+					"name": "describeCluster",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ecs/describeCluster"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EC2",
+			"item": [
+				{
+					"name": "describeInstances",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/ec2/describeInstances"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "S3",
+			"item": [
+				{
+					"name": "listBuckets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/s3/listBuckets"
+					},
+					"response": []
+				},
+				{
+					"name": "listObjetcts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/s3/listObjects"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KMS",
+			"item": [
+				{
+					"name": "listKeys",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/kms/listKeys"
+					},
+					"response": []
+				},
+				{
+					"name": "describeKey",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/kms/describeKey"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "secretsManager",
+			"item": [
+				{
+					"name": "listSecrets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/secretsManager/listSecrets"
+					},
+					"response": []
+				},
+				{
+					"name": "getSecret",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/secretsManager/getSecret"
+					},
+					"response": []
+				},
+				{
+					"name": "describeSecret",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/secretsManager/describeSecret"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RDS",
+			"item": [
+				{
+					"name": "describeDBInstances",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/rds/describeDBInstances"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
