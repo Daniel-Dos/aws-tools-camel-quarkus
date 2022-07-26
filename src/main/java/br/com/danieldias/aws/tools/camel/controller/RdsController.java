@@ -1,4 +1,4 @@
-package br.com.danieldias.aws.tools.camel.Controller;
+package br.com.danieldias.aws.tools.camel.controller;
 
 import br.com.danieldias.aws.tools.camel.service.RdsCall;
 
